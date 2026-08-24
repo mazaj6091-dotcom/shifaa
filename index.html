@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>شفاء | رحلة تعيدك إلى القرآن</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Arial", sans-serif;
+            background: #f7f5ef;
+            color: #284722;
+            line-height: 1.8;
+        }
+
+        /* الشريط العلوي */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #857c5d;
+            color: white;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 15px;
+        }
+
+        /* الواجهة الرئيسية */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background:
+                radial-gradient(circle at top, #ebe7da, #f7f5ef 60%);
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin-bottom: 10px;
+            color: #284722;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            font-weight: normal;
+            color: #857c5d;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #284722;
+            color: white;
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        /* الأقسام */
+        section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+            color: #284722;
+        }
+
+        section > p {
+            color: #777;
+            margin-bottom: 45px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #284722;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 15px;
+        }
+
+        /* آية اليوم */
+        .verse {
+            background: #284722;
+            color: white;
+        }
+
+        .verse h2 {
+            color: white;
+        }
+
+        .verse-text {
+            max-width: 750px;
+            margin: auto;
+            font-size: 27px;
+            line-height: 2.2;
+            margin-bottom: 20px;
+        }
+
+        .verse-source {
+            color: #d8d2bd;
+        }
+
+        /* المنتجات */
+        .products {
+            background: #ebe7da;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #857c5d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        /* الهاتف */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+
+            .verse-text {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- القائمة -->
+    <nav>
+        <div class="logo">شفاء</div>
+
+        <div>
+            <a href="#home">الرئيسية</a>
+            <a href="#explore">اكتشف</a>
+            <a href="#products">المنتجات</a>
+        </div>
+    </nav>
+
+    <!-- الواجهة الرئيسية -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>شفاء</h1>
+
+            <h2>رحلة تعيدك إلى القرآن</h2>
+
+            <p>
+                مساحة هادئة تساعدك على الاقتراب من كتاب الله،
+                والتأمل في آياته، وصناعة علاقة أعمق مع القرآن.
+            </p>
+
+            <a href="#explore" class="button">
+                ابدأ رحلتك
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- اكتشف -->
+    <section id="explore">
+
+        <h2>اكتشف</h2>
+
+        <p>
+            اجعل القرآن جزءًا حيًا من يومك.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">📖</div>
+
+                <h3>تدبّر</h3>
+
+                <p>
+                    آيات وأسئلة تساعدك على التوقف
+                    والتأمل في معاني القرآن.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🎧</div>
+
+                <h3>استمع</h3>
+
+                <p>
+                    استمع إلى القرآن في لحظات الهدوء
+                    والتأمل.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🌿</div>
+
+                <h3>آية اليوم</h3>
+
+                <p>
+                    آية ترافقك خلال يومك
+                    وتمنحك مساحة للتفكر.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">✨</div>
+
+                <h3>تجربة شفاء</h3>
+
+                <p>
+                    أدوات وتجارب تفاعلية تساعدك
+                    على بناء علاقة أعمق مع القرآن.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- آية -->
+    <section class="verse">
+
+        <h2>آية اليوم</h2>
+
+        <div class="verse-text">
+
+            ﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾
+
+        </div>
+
+        <div class="verse-source">
+            سورة الرعد — 28
+        </div>
+
+    </section>
+
+
+    <!-- المنتجات -->
+    <section class="products" id="products">
+
+        <h2>منتجات شفاء</h2>
+
+        <p>
+            منتجات صُممت لتجعل علاقتك بالقرآن أكثر حضورًا في حياتك.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">📦</div>
+
+                <h3>البوكسات القرآنية</h3>
+
+                <p>
+                    تجارب متكاملة تجمع بين القرآن
+                    والتأمل والتفاعل.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">💳</div>
+
+                <h3>البطاقات التفاعلية</h3>
+
+                <p>
+                    بطاقات تحمل معنى وتفتح لك
+                    تجربة رقمية مختلفة.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">📱</div>
+
+                <h3>تجربة NFC & QR</h3>
+
+                <p>
+                    المس أو امسح لتنتقل من المنتج
+                    إلى تجربة رقمية على شفاء.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الفوتر -->
+    <footer>
+
+        <h3>شفاء</h3>
+
+        <p>
+            رحلة تعيدك إلى القرآن.
+        </p>
+
+    </footer>
+
+</body>
+</html>
